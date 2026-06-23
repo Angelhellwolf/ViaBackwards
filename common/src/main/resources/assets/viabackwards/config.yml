@@ -1,76 +1,75 @@
-# If you need help, you can join our Discord - https://viaversion.com/discord
+# 如需帮助，可加入我们的 Discord - https://viaversion.com/discord
 #
-# Always shows a mapped mob's original name, and not only when hovering over it with the cursor.
+# 始终显示已映射生物的原始名称，而不是只在光标悬停时显示。
 always-show-original-mob-name: true
 #
-# Writes name and level of custom enchantments into the item's lore.
-# Set this to false if you see the entries doubled/if the custom-enchant plugin already writes these into the lore manually.
+# 将自定义附魔的名称和等级写入物品 lore。
+# 如果你看到条目重复，或自定义附魔插件已经手动写入 lore，请设为 false。
 add-custom-enchants-into-lore: true
 #
-# Adds the color of a scoreboard team after its prefix for 1.12 clients on 1.13+ servers.
+# 为 1.12 客户端在 1.13+ 服务器上把计分板队伍颜色追加到前缀之后。
 add-teamcolor-to-prefix: true
 #
-# Converts the 1.13 face look-at packet for 1.12- players. Requires a bit of extra caching.
+# 为 1.12- 玩家转换 1.13 的面向玩家数据包。需要额外缓存。
 fix-1_13-face-player: false
 #
-# Fixes 1.13 clients and lower not seeing color or formatting in inventory titles by converting them to legacy text.
-# If you have issues with translatable text being displayed wrongly, disable this.
+# 修复 1.13 及更低客户端看不到背包标题颜色或格式的问题，会将其转换为旧版文本。
+# 如果可翻译文本显示错误，请禁用此项。
 fix-formatted-inventory-titles: true
 #
-# Sends inventory acknowledgement packets to act as a replacement for ping packets for sub 1.17 clients.
-# This only takes effect for ids in the short range. Useful for anticheat compatibility.
+# 向低于 1.17 的客户端发送背包确认包，用作 ping 包替代。
+# 仅对 short 范围内的 ID 生效。适合反作弊兼容。
 handle-pings-as-inv-acknowledgements: false
 #
-# Adds bedrock blocks at y=0 for sub 1.17 clients. This may allow for weird interactions due to sending fake blocks.
+# 为低于 1.17 的客户端在 y=0 添加基岩方块。由于发送的是假方块，可能导致奇怪交互。
 bedrock-at-y-0: false
 #
-# Shows sculk shriekers as crying obsidian for 1.18.2 clients on 1.19+ servers. This fixes collision and block breaking issues.
-# If disabled, the client will see them as end portal frames.
+# 在 1.19+ 服务器上，把幽匿尖啸体显示为哭泣的黑曜石给 1.18.2 客户端。这会修复碰撞和方块破坏问题。
+# 禁用时，客户端会把它们看作末地传送门框架。
 sculk-shriekers-to-crying-obsidian: true
 #
-# Shows scaffolding as water for 1.13.2 clients on 1.14+ servers. This fixes collision issues.
-# If disabled, the client will see them as hay blocks.
+# 在 1.14+ 服务器上，把脚手架显示为水给 1.13.2 客户端。这会修复碰撞问题。
+# 禁用时，客户端会把它们看作干草块。
 scaffolding-to-water: false
 #
-# Maps the darkness effect to blindness for 1.18.2 clients on 1.19+ servers.
+# 在 1.19+ 服务器上，将黑暗效果映射为失明给 1.18.2 客户端。
 map-darkness-effect: true
 #
-# If enabled, 1.21.3 clients will receive the first float of 1.21.4+ custom model data as int. Disable if you handle this change yourself.
+# 启用后，1.21.3 客户端会把 1.21.4+ 自定义模型数据的第一个 float 接收为 int。若你自己处理了此变更，请禁用。
 map-custom-model-data: true
 #
-# If enabled, 1.19.3 clients will receive display entities as armor stands with custom entity data on 1.19.4+ servers. Note that
-# this does not support all features display entities offer.
+# 启用后，1.19.3 客户端会在 1.19.4+ 服务器上把展示实体接收为带自定义实体数据的盔甲架。注意：
+# 这不支持展示实体提供的全部功能。
 map-display-entities: true
 #
-# Suppresses warnings of missing emulations for certain features that are not supported (e.g. world height in 1.17+).
+# 抑制某些不支持功能缺少模拟时的警告（例如 1.17+ 世界高度）。
 suppress-emulation-warnings: false
 #
-# If enabled, dialogs will be shown via chest inventories for 1.21.5 clients on 1.21.6+ servers.
+# 启用后，1.21.5 客户端在 1.21.6+ 服务器上会通过箱子界面显示对话。
 dialogs-via-chests: true
 #
-# Dialog styling. You can also use translation keys here.
+# 对话样式。这里也可以使用翻译键。
 dialog-style:
-  page-navigation-title: "&9&lPage navigation"
-  page-navigation-next: "&9Left click: &6Go to next page"
-  page-navigation-previous: "&9Right click: &6Go to previous page"
-  toggle-value: "&9Left click: &6Toggle value"
-  increase-value: "&9Left click: &6Increase value by %s"
-  decrease-value: "&9Right click: &6Decrease value by %s"
-  value-range: "&7(Value between &a%s &7and &a%s&7)"
-  current-value: "&7Current value: &a%s"
-  edit-value: "&9Left click: &6Edit text"
-  next-option: "&9Left click: &6Go to next option"
-  previous-option: "&9Right click: &6Go to previous option"
-  set-text: "&9Left click/close: &6Set text"
-  close: "&9Left click: &6Close"
+  page-navigation-title: "&9&l页面导航"
+  page-navigation-next: "&9左键：&6前往下一页"
+  page-navigation-previous: "&9右键：&6返回上一页"
+  toggle-value: "&9左键：&6切换数值"
+  increase-value: "&9左键：&6增加 %s"
+  decrease-value: "&9右键：&6减少 %s"
+  value-range: "&7（数值范围：&a%s &7到 &a%s&7）"
+  current-value: "&7当前值：&a%s"
+  edit-value: "&9左键：&6编辑文本"
+  next-option: "&9左键：&6前往下一个选项"
+  previous-option: "&9右键：&6返回上一个选项"
+  set-text: "&9左键/关闭：&6设置文本"
+  close: "&9左键：&6关闭"
 #
-# If enabled, the code of conduct will be shown as a dialog for 1.21.7 clients on 1.21.9+ servers.
-# Note that this is not supported for clients below 1.21.6 right now due to missing support for
-# dialogs during the configuration phase.
+# 启用后，1.21.7 客户端在 1.21.9+ 服务器上会通过对话显示行为准则。
+# 注意：由于配置阶段暂不支持对话，目前不支持低于 1.21.6 的客户端。
 code-of-conduct-as-dialog: true
 #
-# Passes the original vanilla 1.21.4+ item name into custom_model_data strings.
-# This allows client resource packs to restore the appearance of newer items entirely missing from this older version.
-# Disable if your server creates custom items using modern items as their base.
-# Tip: For server custom items, base them on items in the game before 1.21.4 (e.g. saddle) to ensure compatibility.
+# 将原版 1.21.4+ 物品名传入 custom_model_data 字符串。
+# 这允许客户端资源包完整还原此旧版本缺失的新物品外观。
+# 如果你的服务器使用现代物品作为基础创建自定义物品，请禁用。
+# 提示：服务器自定义物品应基于 1.21.4 之前已有的物品（例如鞍），以确保兼容性。
 pass-original-item-name-to-resource-packs: true

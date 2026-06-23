@@ -103,10 +103,10 @@ public interface ViaBackwardsPlatform {
 
         Via.getManager().getSubPlatforms().add(VersionInfo.getImplementationVersion());
 
-        getLogger().info("Loading translations...");
+        getLogger().info("正在加载翻译...");
         TranslatableMappings.loadTranslatables();
 
-        getLogger().info("Registering protocols...");
+        getLogger().info("正在注册协议...");
         BackwardsRegistrations.apply();
 
         final ProtocolManager protocolManager = Via.getManager().getProtocolManager();
@@ -193,10 +193,10 @@ public interface ViaBackwardsPlatform {
         String vvVersion = Via.getPlatform().getPluginVersion();
         if (vvVersion != null && new Version(vvVersion).compareTo(new Version(MINIMUM_VV_VERSION + "--")) < 0) {
             getLogger().severe("================================");
-            getLogger().severe("YOUR VIAVERSION IS OUTDATED (you are running " + vvVersion + ")");
-            getLogger().severe("PLEASE USE VIAVERSION " + MINIMUM_VV_VERSION + " OR NEWER");
-            getLogger().severe("LINK: https://ci.viaversion.com/");
-            getLogger().severe("VIABACKWARDS WILL NOW DISABLE");
+            getLogger().severe("你的 VIAVERSION 已过期（当前运行 " + vvVersion + "）");
+            getLogger().severe("请使用 VIAVERSION " + MINIMUM_VV_VERSION + " 或更高版本");
+            getLogger().severe("链接：https://ci.viaversion.com/");
+            getLogger().severe("VIABACKWARDS 现在将被禁用");
             getLogger().severe("================================");
             return true;
         }

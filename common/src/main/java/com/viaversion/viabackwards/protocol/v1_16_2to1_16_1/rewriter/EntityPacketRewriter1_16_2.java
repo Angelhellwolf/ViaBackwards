@@ -82,7 +82,7 @@ public class EntityPacketRewriter1_16_2 extends EntityRewriter<ClientboundPacket
                         }
                     } else if (!warned && !ViaBackwards.getConfig().suppressEmulationWarnings()) {
                         warned = true;
-                        protocol.getLogger().warning("1.16 and 1.16.1 clients are only partially supported and may have wrong biomes displayed.");
+                        protocol.getLogger().warning("1.16 和 1.16.1 客户端仅受部分支持，可能会显示错误的生物群系。");
                     }
 
                     // Just screw the registry and write the defaults for 1.16 and 1.16.1 clients

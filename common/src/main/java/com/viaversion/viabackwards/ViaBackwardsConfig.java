@@ -81,19 +81,19 @@ public class ViaBackwardsConfig extends Config implements com.viaversion.viaback
 
     private DialogStyleConfig loadDialogStyleConfig(final ConfigSection section) {
         return new DialogStyleConfig(
-            getString(section, "page-navigation-title", "&9&lPage navigation"),
-            getString(section, "page-navigation-next", "&9Left click: &6Go to next page"),
-            getString(section, "page-navigation-previous", "&9Right click: &6Go to previous page"),
-            getString(section, "increase-value", "&9Left click: &6Increase value by %s"),
-            getString(section, "decrease-value", "&9Right click: &6Decrease value by %s"),
-            getString(section, "value-range", "&7(Value between &a%s &7and &a%s&7)"),
-            getString(section, "next-option", "&9Left click: &6Go to next option"),
-            getString(section, "previous-option", "&9Right click: &6Go to previous option"),
-            getString(section, "current-value", "&7Current value: &a%s"),
-            getString(section, "edit-value", "&9Left click: &6Edit text"),
-            getString(section, "set-text", "&9Left click/close: &6Set text"),
-            getString(section, "close", "&9Left click: &6Close"),
-            getString(section, "toggle-value", "&9Left click: &6Toggle value")
+            getString(section, "page-navigation-title", "&9&l页面导航"),
+            getString(section, "page-navigation-next", "&9左键：&6前往下一页"),
+            getString(section, "page-navigation-previous", "&9右键：&6返回上一页"),
+            getString(section, "increase-value", "&9左键：&6增加 %s"),
+            getString(section, "decrease-value", "&9右键：&6减少 %s"),
+            getString(section, "value-range", "&7（数值范围：&a%s &7到 &a%s&7）"),
+            getString(section, "next-option", "&9左键：&6前往下一个选项"),
+            getString(section, "previous-option", "&9右键：&6返回上一个选项"),
+            getString(section, "current-value", "&7当前值：&a%s"),
+            getString(section, "edit-value", "&9左键：&6编辑文本"),
+            getString(section, "set-text", "&9左键/关闭：&6设置文本"),
+            getString(section, "close", "&9左键：&6关闭"),
+            getString(section, "toggle-value", "&9左键：&6切换数值")
         );
     }
 

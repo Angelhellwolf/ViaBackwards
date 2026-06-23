@@ -366,7 +366,7 @@ public class ChestDialogViewProvider implements DialogViewProvider {
 
     protected void clickTextInput(final UserConnection connection, final TextInput textInput) {
         final ChestDialogStorage storage = connection.get(ChestDialogStorage.class);
-        openAnvilView(connection, storage, translate("§7Edit text"), textInput.value(), textInput);
+        openAnvilView(connection, storage, translate("§7编辑文本"), textInput.value(), textInput);
     }
 
     protected Item getSingleOptionInput(final UserConnection connection, final SingleOptionInput singleOptionInput) {
