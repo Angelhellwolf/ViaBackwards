@@ -30,7 +30,7 @@ sculk-shriekers-to-crying-obsidian: true
 #
 # 在 1.14+ 服务器上，把脚手架显示为水给 1.13.2 客户端。这会修复碰撞问题。
 # 禁用时，客户端会把它们看作干草块。
-scaffolding-to-water: false
+scaffolding-to-water: true
 #
 # 在 1.19+ 服务器上，将黑暗效果映射为失明给 1.18.2 客户端。
 map-darkness-effect: true
